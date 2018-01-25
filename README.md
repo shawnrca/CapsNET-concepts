@@ -1,3 +1,3 @@
 # CapsNET-concepts
 Playing with capsule stuff
-NOT COMPLETED IN PROGRESS
+<strong/>NOT COMPLETED IN PROGRESS
