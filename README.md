@@ -212,7 +212,7 @@ href="https://arxiv.org/find/cs/1/au:+Hinton_G/0/1/0/all/0/1"></a></span></p>
 </span></b></p>
 
 <p class=MsoNormal><span lang=EN>The output of the primary capsule layer is
-multiplied by Weight matrix to create <b>u_hat.  </b>Considering the DigitCaps
+multiplied by Weight matrix to create <b>u_hat.  </b>Considering the DigitCaps
 layer has 10-16D vectors the u_hat will have the shape of 1152x10x16.</span></p>
 
 <p class=MsoNormal><span style='font-size:48.0pt;line-height:115%'><img
@@ -226,12 +226,12 @@ src="article%20on%20capsnet_files/image004.png"></span></p>
 <p class=MsoNormal><b><span lang=EN>&nbsp;</span></b></p>
 
 <p class=MsoNormal><span lang=EN>At this stage, the logits (<b>bij</b>) will be
-learned through routing algorithms.  Logits will be translated to coupling
-coefficients (<b>cij</b>) using softmax function (calculated over DigitCaps).
-This defines the parent (Digit Caps 1 to 10) that is chosen by each capsule
-output. So the output is called (<b>s</b>). (s) then goes through squash
-function to create (<b>v</b>) with unit norm.  Routing algorithm should be
-executed for each sample in the batch, so I used <b>tf.while_loop.</b></span></p>
+learned through routing algorithms.  Logits will be translated to coupling coefficients
+(<b>cij</b>) using softmax function (calculated over DigitCaps). This defines
+the parent (Digit Caps 1 to 10) that is chosen by each capsule output. So the
+output is called (<b>s</b>). (s) then goes through squash function to create (<b>v</b>)
+with unit norm.  Routing algorithm should be executed for each sample in the
+batch, so I used <b>tf.while_loop.</b></span></p>
 
 <p class=MsoNormal><span lang=EN> </span><img border=0 width=592 height=155
 id=image10.png src="article%20on%20capsnet_files/image005.png"></p>
