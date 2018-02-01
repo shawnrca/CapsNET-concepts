@@ -1,5 +1,5 @@
 <p><strong>CapsNet</strong></p>
-<p>This an implementation of CapsNet for mnist based on the <a href="https://arxiv.org/abs/1710.09829"><strong>Dynamic Routing Between Capsules</strong></a> paper by Sara Sabour, Nicholas Frosst, and Geoffrey E. Hinton. I used tensorflow and mnist data downloaded from <a href="http://yann.lecun.com/exdb/mnist/">Yann LeCun website</a>.</p>
+<p>This is an implementation of CapsNet for mnist based on the <a href="https://arxiv.org/abs/1710.09829"><strong>Dynamic Routing Between Capsules</strong></a> paper by Sara Sabour, Nicholas Frosst, and Geoffrey E. Hinton. I used tensorflow and mnist data downloaded from <a href="http://yann.lecun.com/exdb/mnist/">Yann LeCun website</a>.</p>
 <p>The code is developed Jupyter notebook. I added naive unit tests to make sure the output of each layer is according to specs. I tried to use same name convention for most cases for clarity.</p>
 <p>The following is the main architecture of CapsNet:</p>
 <p><img src="https://github.com/shawnrca/CapsNET-concepts/blob/master/pics/1.png" alt="1" /></p>
